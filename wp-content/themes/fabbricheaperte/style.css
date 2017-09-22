@@ -1,0 +1,175 @@
+/*
+Theme Name: Fabbriche Aperte Piemonte
+Template: twentyseventeen
+Author: Matteo Giaccone & Claudio Gavioli
+Author URI: https://www.turnintocoders.it
+Description: Theme for Fabbriche Aperte Piemonte. Child theme of twentyseventeen.
+Version: 1.1.2
+Updated: 2017-09-22 15:20:00
+
+*/
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.single-post:not(.has-sidebar) #primary,
+.page.page-one-column:not(.twentyseventeen-front-page) #primary,
+.archive.page-one-column:not(.has-sidebar) .page-header,
+.archive.page-one-column:not(.has-sidebar) #primary {
+	max-width: 1000px;
+}
+
+.page-one-column .panel-content .wrap {
+	max-width: 1000px;
+}
+
+/*
+Puoi aggiungere qui il tuo codice CSS.
+
+Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il punto interrogativo qui sopra).
+*/
+
+@font-face {
+	font-family: Irma;
+	src: url('/wp-content/themes/oht/font/IrmaBlack.otf');
+	font-weight: bold;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+/* riduce altezza header */
+.site-branding {
+    padding: 1.5em 0;
+}
+
+.site-branding a {
+    font-family: Irma;
+}
+
+/* sfondo azzurro dell'header */
+.site-header {
+    background-color: #009ee8;
+}
+
+/* larghezza colonna contenuto == header */
+.page-one-column .panel-content .wrap,
+.page.page-one-column:not(.twentyseventeen-front-page) #primary {
+    max-width: 1000px;
+}
+
+/* riduci padding-top contenuto */
+.site-content {
+    padding: 2.5em 0 0;
+}
+
+/* no titolo in homepage */
+.home .panel-content .entry-header {
+	display: none;
+}
+
+/* riduce padding-top contenuto */
+.panel-content .wrap {
+	padding-top: 1em;
+}
+
+/* colori navigazione e link */
+.navigation-top a,
+a {
+	color: #009ee8;
+}
+
+/* colori navigazione e link */
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+	color: #009ee8;
+	text-decoration: underline;
+}
+
+/* riduci margine titolo pagina*/
+.page.page-one-column .entry-header {
+    margin-bottom: 2em;
+}
+
+.ngg-galleryoverview {
+	margin-bottom: 1.5em;
+}
+
+.ngg-gallery-thumbnail,
+.ngg-gallery-thumbnail a {
+	margin: 0 !important;
+}
+
+.entry-summary p {
+	margin-bottom: 0;
+}
+
+.archive.page-one-column:not(.has-sidebar) .page-header {
+	margin-bottom: 0;
+}
+
+.gallery-caption {
+	color: #009ee8;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.panel-image-text {
+	color: white;
+	font-family: Irma;
+	font-size: 1rem;
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+	.panel-image-text {
+		font-size: 1.5rem;
+		top: 35%;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.panel-image-text {
+		font-size: 2rem;
+	}
+}
+
+.background-fixed .panel-image {
+	background-attachment: scroll;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.flex-container img {
+	margin-bottom: 2em;
+	margin-right: 3em;
+}
+
+.flex-container a,
+.flex-container a img,
+.flex-container a:hover {
+	box-shadow: none;
+}
+
+@media screen and (max-width: 30em) {
+	.flex-container a img {
+		max-width: 245px;
+	}
+}
