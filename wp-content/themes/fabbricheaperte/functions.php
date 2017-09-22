@@ -14,9 +14,9 @@ function my_theme_enqueue_styles() {
 		wp_get_theme()->get('Version') );
 }
 
-add_image_size( 'twentyseventeen-thumbnail-edificio', 300, 300, true );
+add_image_size( 'twentyseventeen-thumbnail-fabbrica', 300, 300, true );
 
-function oht_content_width() {
+function fap_content_width() {
 
 	$content_width = $GLOBALS['content_width'];
 
@@ -47,13 +47,13 @@ function oht_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'twentyseventeen_content_width', $content_width );
 }
 remove_action( 'template_redirect', 'twentyseventeen_content_width', 0 );
-add_action( 'template_redirect', 'oht_content_width', 0 );
+add_action( 'template_redirect', 'fap_content_width', 0 );
 
 unregister_sidebar( 'sidebar-1' );
 
 wp_dequeue_style( 'twentyseventeen-fonts' );
 
-function oht_content_image_sizes_attr( $sizes, $size ) {
+function fap_content_image_sizes_attr( $sizes, $size ) {
 	$width = $size[0];
 
 	if ( 1000 <= $width ) {
@@ -69,41 +69,40 @@ function oht_content_image_sizes_attr( $sizes, $size ) {
 	return $sizes;
 }
 remove_filter( 'wp_calculate_image_sizes', 'twentyseventeen_content_image_sizes_attr', 10 );
-add_filter( 'wp_calculate_image_sizes', 'oht_content_image_sizes_attr', 10, 2 );
+add_filter( 'wp_calculate_image_sizes', 'fap_content_image_sizes_attr', 10, 2 );
 
-add_action( 'init', 'oht_crea_edifici' );
-function oht_crea_edifici() {
-	register_post_type( 'edificio',
+add_action( 'init', 'fap_crea_fabbriche' );
+function fap_crea_fabbriche() {
+	register_post_type( 'fabbriche',
 	array(
 		'labels' => array(
-			'name' => __( 'Edifici' ),
-			'singular_name' => __( 'Edificio' )
+			'name' => __( 'Fabbriche' ),
+			'singular_name' => __( 'Fabbrica' )
 		),
 		'public' => true,
 		'has_archive' => true,
-		'rewrite' => array('slug' => 'edifici'),
-		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes', 'custom-fields'),
-		'taxonomies' => array('post_tag', 'category' ),
+		'rewrite' => array('slug' => 'fabbriche'),
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
 		)
 	);
 }
 
-function oht_add_edifici_body_class( $classes ) {
+function fap_add_fabbriche_body_class( $classes ) {
 	global $post;
-	if ( isset( $post ) && $post->post_type == 'edificio' && !is_archive() ) {
+	if ( isset( $post ) && $post->post_type == 'fabbrica' && !is_archive() ) {
 		$classes[] = 'has-sidebar';
 	}
 	return $classes;
 }
-add_filter( 'body_class', 'oht_add_edifici_body_class' );
+add_filter( 'body_class', 'fap_add_fabbriche_body_class' );
 
-function oht_remove_menus(){
+function fap_remove_menus(){
 	remove_menu_page( 'edit.php' );          //Posts
 	remove_menu_page( 'edit-comments.php' ); //Comments
 }
-add_action( 'admin_menu', 'oht_remove_menus' );
+add_action( 'admin_menu', 'fap_remove_menus' );
 
-function oht_building_info() {
+function fap_building_info() {
 	$custom_fields = get_post_custom();
 	$building_info = ['Anno', 'Progettisti', 'Apertura sabato', 'Apertura domenica',
 		'Accesso', 'Modalità', 'Persone / Visita', 'Indirizzo', 'Mezzi', 'Accessibilità sedia a rotelle'];
