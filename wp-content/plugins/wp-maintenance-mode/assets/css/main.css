@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.full-hd {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+
+	.full-hd {
+		display: block;
+	}
+
+}
