@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive edifici
+ * The template for displaying archive fabbriche
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -13,7 +13,7 @@
 get_header();
 $selected_cat = '';
 $selected_tag = '';
-$query = 'post_type=edificio';
+$query = 'post_type=fabbriche';
 if ( array_key_exists( 'cat', $_GET ) ) {
 	$query .= '&cat='.htmlspecialchars($_GET['cat']);
 	$selected_cat = $_GET['cat'];
@@ -29,13 +29,13 @@ query_posts( $query );
 
 <div class="wrap">
 	<header class="page-header">
-		<h1 class="page-title">Edifici</h1>
+		<h1 class="page-title">Fabbriche</h1>
 	</header><!-- .page-header -->
 
-	<form method="get" class="search-form" action="/edifici">
+	<form method="get" class="search-form" action="/fabbriche">
 		<div class="gallery gallery-columns-3 gallery-size-thumbnail">
 			<div class="gallery-item">
-				<label for="quartiere">Quartiere: </label>
+				<label for="quartiere">Provincia: </label>
 				<select id="quartiere" name="cat">
 					<option value="">Vedi tutti</option>
 					<?php $categories = get_categories();
@@ -49,7 +49,7 @@ query_posts( $query );
 					} ?>
 				</select>
 			</div><div class="gallery-item">
-				<label for="tipologia">Tipologia: </label>
+				<label for="tipologia">Categoria: </label>
 				<select id="tipologia" name="tag">
 					<option value="">Vedi tutti</option>
 					<?php $tags = get_tags();
@@ -76,7 +76,7 @@ query_posts( $query );
 	}
 	if ( ( array_key_exists( 'cat', $_GET ) && !empty( $_GET['cat'] ) ) ||
 		 ( array_key_exists( 'tag', $_GET ) && !empty( $_GET['tag'] ) ) ) {
-		echo '<p><a href="/edifici">Vedi tutti</a></p>';
+		echo '<p><a href="/fabbriche">Vedi tutti</a></p>';
 	}
 	?>
 
@@ -92,7 +92,7 @@ query_posts( $query );
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/edificio-thumb' );
+					get_template_part( 'template-parts/fabbriche-thumb' );
 				endwhile;
 			else :
 				get_template_part( 'template-parts/post/content', 'none' );

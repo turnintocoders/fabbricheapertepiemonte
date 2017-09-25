@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying single edificio
+ * The template for displaying single fabbrica
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -42,20 +42,20 @@ get_header(); ?>
 		<section class="widget widget_text">
 			<h2 class="widget-title">Informazioni</h2>
 			<div class="textwidget">
-				<?= oht_building_info() ?>
+				<?= fap_building_info() ?>
 			</div>
 		</section>
 
 		<p>
-			<b>Quartiere:</b>
-			<a href="/edifici?cat=<?= get_the_category()[0]->cat_ID ?>">
+			<b>Provincia:</b>
+			<a href="/fabbriche?cat=<?= get_the_category()[0]->cat_ID ?>">
 				<?= get_the_category()[0]->name ?>
 			</a>
 		</p>
 
 		<p>
-			<b>Tipologia:</b>
-			<a href="/edifici?tag=<?= get_the_tags()[0]->slug ?>">
+			<b>Categoria:</b>
+			<a href="/fabbriche?tag=<?= get_the_tags()[0]->slug ?>">
 				<?= get_the_tags()[0]->name ?>
 			</a>
 		</p>

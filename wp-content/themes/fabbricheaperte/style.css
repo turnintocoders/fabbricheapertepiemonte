@@ -35,9 +35,8 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
 */
 
 @font-face {
-	font-family: Irma;
-	src: url('/wp-content/themes/oht/font/IrmaBlack.otf');
-	font-weight: bold;
+	font-family: Myriad;
+	src: url('/wp-content/themes/fabbricheaperte/font/MyriadPro-Regular.otf');
 }
 
 body,
@@ -45,7 +44,7 @@ button,
 input,
 select,
 textarea {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-family: Myriad,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 /* riduce altezza header */
@@ -54,12 +53,12 @@ textarea {
 }
 
 .site-branding a {
-    font-family: Irma;
+    font-family: Myriad;
 }
 
 /* sfondo azzurro dell'header */
 .site-header {
-    background-color: #009ee8;
+    background-color: #570036;
 }
 
 /* larghezza colonna contenuto == header */
@@ -83,16 +82,44 @@ textarea {
 	padding-top: 1em;
 }
 
+/* Reset top navigation bar and float it right */
+.navigation-top {
+	background-color: #570036;
+	border: 0;
+	color: #89D3A1;
+	float: right;
+	left: auto;
+	right: auto;
+	position: relative;
+	top: auto;
+	width: auto;
+}
+
+.custom-header,
+.site-branding {
+	margin-bottom: 0 !important;
+}
+
+.custom-logo-link {
+	float: left;
+}
+
 /* colori navigazione e link */
 .navigation-top a,
 a {
-	color: #009ee8;
+	color: #89D3A1;
 }
 
 /* colori navigazione e link */
 .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-	color: #009ee8;
+	color: #89D3A1;
 	text-decoration: underline;
+}
+
+.navigation-top-date {
+	font-size: 40px;
+	line-height: 32px;
+	padding-left: 17.5px;
 }
 
 /* riduci margine titolo pagina*/
@@ -118,7 +145,7 @@ a {
 }
 
 .gallery-caption {
-	color: #009ee8;
+	color: #570036;
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 700;
@@ -126,7 +153,7 @@ a {
 
 .panel-image-text {
 	color: white;
-	font-family: Irma;
+	font-family: Myriad;
 	font-size: 1rem;
 	position: absolute;
 	text-align: center;
