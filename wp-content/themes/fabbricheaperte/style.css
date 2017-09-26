@@ -161,6 +161,240 @@ a {
 	width: 100%;
 }
 
+/* ============= MODIFICHE CLAUDIO ============= */
+
+.navigation-top-date {
+	margin-bottom: .5em;
+}
+
+.navigation-top a {
+	color: #570036;
+}
+
+.navigation-top a:hover {
+	color: #570036;
+}
+
+.site-branding a:hover, .site-branding a:focus {
+    opacity: 1;
+}
+
+.main-navigation a {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.main-navigation a:hover {
+    color: #570036;
+}
+
+.main-navigation li {
+    background-color: #89D3A1;
+}
+
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+    color: #570036;
+}
+
+.main-navigation li a:hover {
+	background-color: white;
+}
+
+.site-content-contain .site-content {
+	background-color: #570036 /* colore allo sfondo */
+}
+
+.site-content-contain .site-content #primary {
+	max-width: 960px; /* larghezza fissa  */
+	margin: 0 auto;
+}
+
+.site-content-contain .site-content #primary main #post-119 .panel-image {
+	position: relative;
+	height: 65vh;
+	background-position: top center;
+}
+
+.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt {
+	position: absolute;
+	top: 1em;
+	left: 2em;
+	color: #89D3A1;
+	font-family: Myriad;
+	font-size: 2em;
+	width: 8em;
+	line-height: 1.2em;
+}
+
+.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt:nth-of-type(2) {
+	bottom: 1em;
+	right: 2em;
+	top: auto;
+	left: auto;
+}
+
+.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt p {
+	padding: 5px;
+	background-color: #570036;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container {
+	background-color: #89D3A1;
+	padding: 2em 4em;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container:after,
+.site-content-contain .site-content #primary main #panel1 .panel-container:before {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item {
+	width: 50%;
+	float: left;
+	font-family: Myriad;
+	color: white;
+	line-height: 1.2em;
+	padding: 0 1em;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item p {
+	padding: 5px;
+	background-color: #570036;
+	margin: 0;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item span {
+	color: #89D3A1;
+}
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) {
+	border-left: 2px solid white;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) p {
+	background-color: transparent;
+	color: #570036;
+}
+
+.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) span {
+	font-size: .8em;
+	color: inherit;
+}
+
+.site-content-contain .site-content #primary main #panel2 {
+	background-image: url(/wp-content/themes/fabbricheaperte/img/Primaindustrie.jpg);
+	background-repeat:  no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container {
+	padding: 0 8em;
+	height: 100%;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container:after,
+.site-content-contain .site-content #primary main #panel2 .panel-container:before {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container .panel-item {
+	float: left;
+	width: 50%;
+	background: white;
+	height: 100%;
+	padding: 2em 1em;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container .panel-item h3 {
+	padding: 5px;
+	background-color: #89D3A1;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container .panel-item:nth-of-type(2) {
+	background-color: #570036;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container .panel-item:nth-of-type(2) p {
+	color: white;
+}
+
+.site-content-contain .site-content #primary main #panel2 .panel-container .panel-item p span {
+	font-size: .8em;
+}
+
+
+
+
+/* ====== PAGINA FABBRICA ====== */
+
+.page-fabbriche .site-content-contain {
+	background: url(/wp-content/themes/fabbricheaperte/img/BG-pagina1.png) repeat-y;
+	background-size: contain;
+	background-position: top center;
+	overflow: hidden;
+}
+
+.page-fabbriche .site-content-contain .site-content {
+	background: transparent;
+}
+
+.page-fabbriche .site-content-contain #fabbrica-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.page-fabbriche .site-content-contain #fabbrica-container #fabbrica-header {
+	position: relative;
+	height: 10em;
+}
+
+
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:after,
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item {
+	background: #570036 url(/wp-content/themes/fabbricheaperte/img/BG-fabb-item.png) no-repeat;
+	background-size: cover;
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+	height: 272px;
+	margin-bottom: 5%;
+	padding: 2em;
+	color: white;
+}
+
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:hover .page-item {
+	background: #89D3A1;
+	color: #570036;
+}
+
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item p {
+	font-size: 2em;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+
+.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:nth-of-type(3n) .page-item{
+	margin-right: 0;
+}
+
+.site-footer {
+	background-color: white;
+	margin-top: 0;
+}
+
+/* ============= FINE MODIFICHE CLAUDIO ============= */
+
 @media screen and (min-width: 30em) {
 	.panel-image-text {
 		font-size: 1.5rem;
