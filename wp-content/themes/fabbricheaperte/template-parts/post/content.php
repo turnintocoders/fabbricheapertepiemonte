@@ -36,18 +36,22 @@
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			} ?>
-		<p>↓</p>
+		<span>↓</span>
 	</header><!-- .entry-header -->
 
 	<div class="category-row">
-		<?php $provincia = get_field_object('field_59c5168825d53')['value'] ?>
-		<a href="/fabbriche?cat=<?= $provincia ?>">
-			<div class="category-item"><?= $provincia ?></div>
-		</a>
-		<?php $categorie = get_field_object('field_59c517c86992c')['value'] ?>
-		<a href="/fabbriche?tag=<?= implode(',', $categorie) ?>">
+		<?php $provincia = get_field_object('field_59c5168825d53')['value'];
+		if ( $provincia ) { ?>
+			<a href="/fabbriche?provincia=<?= $provincia ?>">
+				<div class="category-item"><?= $provincia ?></div>
+			</a>
+		<?php }
+		$categorie = get_field_object('field_59c517c86992c')['value'];
+		if ( $categorie ) { ?>
+		<a href="/fabbriche?category=<?= implode(',', $categorie) ?>">
 			<div class="category-item"><?= implode(', ', $categorie) ?></div>
 		</a>
+	<?php } ?>
 	</div>
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>

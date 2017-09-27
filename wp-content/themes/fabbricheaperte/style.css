@@ -35,8 +35,8 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
 */
 
 @font-face {
-	font-family: Myriad;
-	src: url('/wp-content/themes/fabbricheaperte/font/MyriadPro-Regular.otf');
+	font-family: Cinetype;
+	src: url('/wp-content/themes/fabbricheaperte/font/GT-Cinetype-Bold.otf');
 }
 
 body,
@@ -44,7 +44,7 @@ button,
 input,
 select,
 textarea {
-	font-family: Myriad,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-family: Cinetype,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 main article {
@@ -67,7 +67,7 @@ main article {
 }
 
 .site-branding a {
-    font-family: Myriad;
+    font-family: Cinetype;
 }
 
 /* sfondo azzurro dell'header */
@@ -118,6 +118,11 @@ main article {
 	float: left;
 }
 
+.custom-logo-link img {
+	max-width: 270px;
+	max-height: 110px;
+}
+
 /* colori navigazione e link */
 .navigation-top a,
 a {
@@ -129,6 +134,7 @@ a {
 .navigation-top .current_page_item > a {
 	color: #89D3A1;
 	text-decoration: underline;
+	background-color: white;
 }
 
 .navigation-top-date {
@@ -172,7 +178,7 @@ a {
 
 .panel-image-text {
 	color: white;
-	font-family: Myriad;
+	font-family: Cinetype;
 	font-size: 1rem;
 	position: absolute;
 	text-align: center;
@@ -251,7 +257,7 @@ a {
 	top: 1em;
 	left: 2em;
 	color: #89D3A1;
-	font-family: Myriad;
+	font-family: Cinetype;
 	font-size: 2em;
 	width: 8em;
 	line-height: 1.2em;
@@ -262,6 +268,9 @@ a {
 	right: 2em;
 	top: auto;
 	left: auto;
+	font-size: 1.5em;
+	width: 14em;
+	text-align: center;
 }
 
 .site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt p {
@@ -284,7 +293,7 @@ a {
 .site-content-contain .site-content #primary main #panel1 .panel-container .panel-item {
 	width: 50%;
 	float: left;
-	font-family: Myriad;
+	font-family: Cinetype;
 	color: white;
 	line-height: 1.2em;
 	padding: 0 1em;
@@ -438,7 +447,6 @@ a {
 	font-size: 1.5em;
 	line-height: 1.2em;
 	width: 49%;
-	height: 6em;
 	margin-left: 0;
 }
 
@@ -473,7 +481,7 @@ a {
 
 #primary main .content-description {
 	color: #570036;
-	font-family: Myriad;
+	font-family: Cinetype;
 	margin-top: 2em;
 }
 

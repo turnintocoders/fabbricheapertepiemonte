@@ -24,7 +24,7 @@ get_header(); ?>
 					<p>Due giorni per scoprire le industrie del Piemonte</p>
 				</div>
 				<div class="panel-txt">
-					<p>#fabbricheaperte</p>
+					<p>#piemontefabbricheaperte</p>
 				</div>
 			</div><!-- .panel-image -->
 

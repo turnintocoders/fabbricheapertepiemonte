@@ -110,7 +110,14 @@ function fap_building_info() {
 	$output = '<ul>';
 	foreach ($building_info as $info) {
 		if ( array_key_exists($info, $custom_fields) && !empty($custom_fields[$info]['value']) ) {
-			$output .= '<li><b>'.$custom_fields[$info]['label'].':</b> '.$custom_fields[$info]['value'].'</li>';
+			$value = $custom_fields[$info]['value'];
+			if ( $info == 'indirizzo' ) {
+				$value = $custom_fields[$info]['value']['address'];
+			}
+			if ( strpos( $value, 'http' ) !== false ) {
+				$value = '<a href="'.$value.'" target="_blank">'.$value.'</a>';
+			}
+			$output .= '<li><b>'.$custom_fields[$info]['label'].':</b> '.$value.'</li>';
 		}
 	}
 	$output .= '</ul>';
