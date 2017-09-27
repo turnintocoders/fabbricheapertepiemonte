@@ -103,18 +103,14 @@ function fap_remove_menus(){
 add_action( 'admin_menu', 'fap_remove_menus' );
 
 function fap_building_info() {
-	$custom_fields = get_post_custom();
-	$building_info = ['Anno', 'Progettisti', 'Apertura sabato', 'Apertura domenica',
-		'Accesso', 'Modalità', 'Persone / Visita', 'Indirizzo', 'Mezzi', 'Accessibilità sedia a rotelle'];
+	$custom_fields = get_field_objects();
+	$building_info = ['apertura_venerdi', 'apertura_sabato', 'persone_visita', 'durata_visita',
+		'indirizzo', 'mezzi_pubblici', 'parcheggio_privato', 'identificazione_partecipanti', 'antinfortunistica',
+		'richieste_particolari', 'accessibilità', 'prenotazioni', 'sito_web', 'facebook', 'twitter', 'instagram'];
 	$output = '<ul>';
 	foreach ($building_info as $info) {
-		if ( array_key_exists($info, $custom_fields) ) {
-			$value = $custom_fields[$info][0];
-			if ( $info == 'Indirizzo' ) {
-				$value = '<a href="https://www.google.it/maps?q='.$value.', Torino" target="_blank">'
-					.$value.'</a>';
-			}
-			$output .= '<li><b>'.$info.':</b> '.$value.'</li>';
+		if ( array_key_exists($info, $custom_fields) && !empty($custom_fields[$info]['value']) ) {
+			$output .= '<li><b>'.$custom_fields[$info]['label'].':</b> '.$custom_fields[$info]['value'].'</li>';
 		}
 	}
 	$output .= '</ul>';
