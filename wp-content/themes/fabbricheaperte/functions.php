@@ -89,7 +89,7 @@ function fap_crea_fabbriche() {
 
 function fap_add_fabbriche_body_class( $classes ) {
 	global $post;
-	if ( isset( $post ) && $post->post_type == 'fabbrica' && !is_archive() ) {
+	if ( isset( $post ) && $post->post_type == 'fabbriche' && !is_archive() ) {
 		$classes[] = 'has-sidebar';
 	}
 	return $classes;
