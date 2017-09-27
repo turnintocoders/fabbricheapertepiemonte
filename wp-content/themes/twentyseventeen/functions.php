@@ -235,13 +235,13 @@ function twentyseventeen_content_width() {
 		if ( twentyseventeen_is_frontpage() ) {
 			$content_width = 644;
 		} elseif ( is_page() ) {
-			$content_width = 740;
+			$content_width = 1000;
 		}
 	}
 
 	// Check if is single post and there is no sidebar.
 	if ( is_single() && ! is_active_sidebar( 'sidebar-1' ) ) {
-		$content_width = 740;
+		$content_width = 1000;
 	}
 
 	/**

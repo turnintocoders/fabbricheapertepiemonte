@@ -4,7 +4,7 @@ Template: twentyseventeen
 Author: Matteo Giaccone & Claudio Gavioli
 Author URI: https://www.turnintocoders.it
 Description: Theme for Fabbriche Aperte Piemonte. Child theme of twentyseventeen.
-Version: 1.1.2
+Version: 1.1.3
 Updated: 2017-09-22 15:20:00
 
 */
@@ -45,6 +45,20 @@ input,
 select,
 textarea {
 	font-family: Myriad,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+main article {
+	background: white;
+	padding: 20px;
+}
+
+.home main article {
+	background: white;
+	padding: 0;
+}
+
+.white-background {
+	background: white;
 }
 
 /* riduce altezza header */
@@ -111,7 +125,8 @@ a {
 }
 
 /* colori navigazione e link */
-.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
 	color: #89D3A1;
 	text-decoration: underline;
 }
@@ -144,6 +159,10 @@ a {
 	margin-bottom: 0;
 }
 
+.has-sidebar #secondary {
+	padding: 20px;
+}
+
 .gallery-caption {
 	color: #570036;
 	font-size: 1rem;
@@ -159,6 +178,18 @@ a {
 	text-align: center;
 	top: 25%;
 	width: 100%;
+}
+
+.site-footer .widget-column.footer-widget-1,
+.site-footer .widget-column.footer-widget-2 {
+	width: 50%;
+}
+
+.cf:after,
+.cf:before {
+	clear: both;
+	display: block;
+	content: '';
 }
 
 /* ============= MODIFICHE CLAUDIO ============= */
@@ -205,7 +236,7 @@ a {
 }
 
 .site-content-contain .site-content #primary {
-	max-width: 960px; /* larghezza fissa  */
+	max-width: 1000px; /* larghezza fissa  */
 	margin: 0 auto;
 }
 
@@ -331,36 +362,36 @@ a {
 
 /* ====== PAGINA FABBRICA ====== */
 
-.page-fabbriche .site-content-contain {
+.post-type-archive-fabbriche .site-content-contain {
 	background: url(/wp-content/themes/fabbricheaperte/img/BG-pagina1.png) repeat-y;
 	background-size: contain;
 	background-position: top center;
 	overflow: hidden;
 }
 
-.page-fabbriche .site-content-contain .site-content {
+.post-type-archive-fabbriche .site-content-contain .site-content {
 	background: transparent;
 }
 
-.page-fabbriche .site-content-contain #fabbrica-container {
-	max-width: 960px;
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container {
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
-.page-fabbriche .site-content-contain #fabbrica-container #fabbrica-header {
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container #fabbrica-header {
 	position: relative;
 	height: 10em;
 }
 
 
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:after,
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:before {
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:after,
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica:before {
 	content: '';
 	clear: both;
 	display: block;
 }
 
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item {
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item {
 	background: #570036 url(/wp-content/themes/fabbricheaperte/img/BG-fabb-item.png) no-repeat;
 	background-size: cover;
 	width: 30%;
@@ -372,19 +403,19 @@ a {
 	color: white;
 }
 
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:hover .page-item {
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:hover .page-item {
 	background: #89D3A1;
 	color: #570036;
 }
 
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item p {
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a .page-item p {
 	font-size: 2em;
 	line-height: 1.2em;
 	margin: 0;
 }
 
 
-.page-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:nth-of-type(3n) .page-item{
+.post-type-archive-fabbriche .site-content-contain #fabbrica-container .item-fabbrica a:nth-of-type(3n) .page-item{
 	margin-right: 0;
 }
 
