@@ -49,6 +49,10 @@
 		$categorie = get_field_object('field_59c517c86992c')['value'];
 		if ( $categorie ) { ?>
 		<a href="/fabbriche?category=<?= implode(',', $categorie) ?>">
+			<?php $categorie = array_map( function($c) {
+					return get_field_object('field_59c517c86992c')['choices'][$c];
+				},
+				$categorie ) ?>
 			<div class="category-item"><?= implode(', ', $categorie) ?></div>
 		</a>
 	<?php } ?>

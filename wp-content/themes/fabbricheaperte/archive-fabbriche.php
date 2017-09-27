@@ -60,9 +60,9 @@ query_posts( $query );
 						<select id="tipologia" name="category">
 							<option value="">Vedi tutti</option>
 							<?php $categories = get_field_object('field_59c517c86992c')['choices'];
-							foreach ($categories as $category) {
-								$selected = $category == $selected_category ? ' selected' : '';
-								echo '<option value="'.$category.'"'.$selected.'>'.$category.'</option>';
+							foreach ($categories as $key => $category) {
+								$selected = $key == $selected_category ? ' selected' : '';
+								echo '<option value="'.$key.'"'.$selected.'>'.$category.'</option>';
 							} ?>
 						</select>
 					</div><div class="gallery-item">
@@ -79,7 +79,7 @@ query_posts( $query );
 				echo '<b>Provincia: </b>'.$selected_provincia.' ';
 			}
 			if ( array_key_exists( 'category', $_GET ) && !empty( $_GET['category'] ) ) {
-				echo '<b>Categoria: </b>'.$selected_category.' ';
+				echo '<b>Categoria: </b>'.get_field_object('field_59c517c86992c')['choices'][$selected_category].' ';
 			}
 			if ( ( array_key_exists( 'provincia', $_GET ) && !empty( $_GET['provincia'] ) ) ||
 				 ( array_key_exists( 'category', $_GET ) && !empty( $_GET['category'] ) ) ) {
