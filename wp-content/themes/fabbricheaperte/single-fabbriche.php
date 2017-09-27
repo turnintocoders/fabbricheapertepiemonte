@@ -39,29 +39,13 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
-		<aside id="secondary" class="widget-area" role="complementary">
-			<section class="widget widget_text">
-				<h2 class="widget-title">Informazioni</h2>
-				<div class="textwidget">
+		<aside id="secondary" class="widget-area fabbr-aside-padding-top" role="complementary">
+			<section class="widget widget_text widget-text-size">
+				<h2 class="widget-title widget-title-bg">Informazioni</h2>
+				<div class="textwidget textwidget-list">
 					<?= fap_building_info() ?>
 				</div>
 			</section>
-
-			<p>
-				<b>Provincia:</b>
-				<?php $provincia = get_field_object('field_59c5168825d53')['value'] ?>
-				<a href="/fabbriche?cat=<?= $provincia ?>">
-					<?= $provincia ?>
-				</a>
-			</p>
-
-			<p>
-				<b>Categoria:</b>
-				<?php $categorie = get_field_object('field_59c517c86992c')['value'] ?>
-				<a href="/fabbriche?tag=<?= implode(',', $categorie) ?>">
-					<?= implode(', ', $categorie) ?>
-				</a>
-			</p>
 		</aside><!-- #secondary -->
 	</div>
 </div><!-- .wrap -->

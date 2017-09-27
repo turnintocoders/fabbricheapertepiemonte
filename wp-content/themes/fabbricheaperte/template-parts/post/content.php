@@ -18,7 +18,7 @@
 			echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 		endif;
 	?>
-	<header class="entry-header">
+	<header class="entry-header header-bg">
 		<?php
 			if ( 'post' === get_post_type() ) :
 				echo '<div class="entry-meta">';
@@ -35,11 +35,20 @@
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
-			if ( '' !== get_the_excerpt() ) : ?>
-				<span class="entry-summary"><?php the_excerpt() ?></span>
-		<?php endif; ?>
+			} ?>
+		<p>↓</p>
 	</header><!-- .entry-header -->
+
+	<div class="category-row">
+		<?php $provincia = get_field_object('field_59c5168825d53')['value'] ?>
+		<a href="/fabbriche?cat=<?= $provincia ?>">
+			<div class="category-item"><?= $provincia ?></div>
+		</a>
+		<?php $categorie = get_field_object('field_59c517c86992c')['value'] ?>
+		<a href="/fabbriche?tag=<?= implode(',', $categorie) ?>">
+			<div class="category-item"><?= implode(', ', $categorie) ?></div>
+		</a>
+	</div>
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
@@ -65,9 +74,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<?php if ( is_single() ) : ?>
-		<?php // twentyseventeen_entry_footer(); ?>
-	<?php endif; ?>
-
 </article><!-- #post-## -->

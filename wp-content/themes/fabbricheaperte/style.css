@@ -4,7 +4,7 @@ Template: twentyseventeen
 Author: Matteo Giaccone & Claudio Gavioli
 Author URI: https://www.turnintocoders.it
 Description: Theme for Fabbriche Aperte Piemonte. Child theme of twentyseventeen.
-Version: 1.1.3
+Version: 1.1.4
 Updated: 2017-09-22 15:20:00
 
 */
@@ -360,7 +360,7 @@ a {
 
 
 
-/* ====== PAGINA FABBRICA ====== */
+/* ====== +++++ PAGINA FABBRICHE +++++ ====== */
 
 .post-type-archive-fabbriche .site-content-contain {
 	background: url(/wp-content/themes/fabbricheaperte/img/BG-pagina1.png) repeat-y;
@@ -424,7 +424,101 @@ a {
 	margin-top: 0;
 }
 
+/* ====== +++++  FINE PAGINA FABBRICHE +++++ ====== */
+
+
+
+/* ====== PAGINA FABBRICA ====== */
+
+/* sfondo colorato titolo*/
+#primary .entry-header.header-bg {
+	background-color: #570036;
+	color: white;
+	padding: 1em;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	width: 49%;
+	height: 6em;
+	margin-left: 0;
+}
+
+/* riga categorie*/
+#primary .category-row {
+	margin: 1em 0;
+}
+
+#primary .category-row:after,
+#primary .category-row:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/* categorie fabbrica*/
+#primary .category-row a .category-item {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	height: 2em;
+	background-color: #89D3A1;
+	color: white;
+	line-height: 2em;
+	padding-left: .5em;
+}
+
+/* margine ultima cateogira destra*/
+#primary .category-row a:nth-of-type(2) .category-item{
+	margin-right: 0;
+}
+
+#primary main .content-description {
+	color: #570036;
+	font-family: Myriad;
+	margin-top: 2em;
+}
+
+/* padding top per allineamento aside */
+#secondary.fabbr-aside-padding-top {
+	padding-top: 11.5em;
+	font-size: 16px;
+	color: #570036;
+}
+
+/* sfondo titolo aside */
+#secondary .widget-title-bg {
+	background-color: #570036;
+	color: white;
+	font-size: 1em;
+	padding: 5px;
+	line-height: 1.2em;
+}
+
+#secondary .widget-text-size {
+	font-size: 14px;
+}
+
+#secondary .textwidget-list ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.ngg-imagebrowser h3 {
+	display: none;
+}
+
+.ngg-imagebrowser .counter {
+	display: none;
+}
+
+
+/* ====== FINE PAGINA FABBRICA ====== */
+
+
 /* ============= FINE MODIFICHE CLAUDIO ============= */
+
+
+
+
 
 @media screen and (min-width: 30em) {
 	.panel-image-text {
