@@ -69,7 +69,7 @@ Una rete di eccellenze che la strategia regionale punta a rafforzare  grazie all
 					</div>
 					<div class="panel-item">
 						<h3>PER IL PUBBLICO</h3>
-						<p>Come partecipare una delle Fabbriche Aperte?</p>
+						<p>Come visitare le Fabbriche Aperte?</p>
 						<p>Le prenotazioni saranno aperte dal 1 ottobre accedendo alle schede delle singole fabbriche</p>
 					</div>
 				</div><!-- .panel-container -->
