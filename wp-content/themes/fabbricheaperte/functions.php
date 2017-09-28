@@ -108,19 +108,26 @@ function fap_building_info() {
 		'indirizzo', 'mezzi_pubblici', 'parcheggio_privato', 'identificazione_partecipanti', 'antinfortunistica',
 		'richieste_particolari', 'accessibilità', 'prenotazioni', 'sito_web', 'facebook', 'twitter', 'instagram'];
 	$output = '<ul>';
+	$address = str_replace( ', Italy', '', $custom_fields['indirizzo']['value']['address'] );
 	foreach ($building_info as $info) {
 		if ( array_key_exists($info, $custom_fields) && !empty($custom_fields[$info]['value']) ) {
 			$value = $custom_fields[$info]['value'];
-			if ( $info == 'indirizzo' ) {
-				$value = $custom_fields[$info]['value']['address'];
-			}
-			if ( strpos( $value, 'http' ) !== false ) {
+			if ( $info != 'indirizzo' && strpos( $value, 'http' ) !== false ) {
 				$value = '<a href="'.$value.'" target="_blank">'.$value.'</a>';
+			}
+			if ( $info == 'indirizzo' ) {
+				$value = '<a href="https://www.google.it/maps?q='.$address.'" target="_blank">'.$address.'</a>';
 			}
 			$output .= '<li><b>'.$custom_fields[$info]['label'].':</b> '.$value.'</li>';
 		}
 	}
 	$output .= '</ul>';
+	$lat = $custom_fields['indirizzo']['value']['lat'];
+	$lng = $custom_fields['indirizzo']['value']['lng'];
+	$output .= '<a href="https://www.google.it/maps?q='.$address.'" target="_blank">'.
+	'<img src="https://maps.googleapis.com/maps/api/staticmap?center='.$lat.','.$lng.
+	'&zoom=15&size=300x300&maptype=roadmap&markers=color:red%7C'.$lat.','.$lng.
+	'&key=AIzaSyChbI5EcduTRA7PcNjZzE_BWOP5b3ikwVo" /></a>';
 	return $output;
 }
 
