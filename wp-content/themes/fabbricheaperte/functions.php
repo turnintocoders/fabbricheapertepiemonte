@@ -105,14 +105,16 @@ add_action( 'admin_menu', 'fap_remove_menus' );
 function fap_building_info() {
 	$custom_fields = get_field_objects();
 	$building_info = ['apertura_venerdi', 'apertura_sabato', 'persone_visita', 'durata_visita',
-		'indirizzo', 'mezzi_pubblici', 'parcheggio_privato', 'identificazione_partecipanti', 'antinfortunistica',
-		'richieste_particolari', 'accessibilità', 'prenotazioni', 'sito_web', 'facebook', 'twitter', 'instagram'];
+		'identificazione_partecipanti', 'antinfortunistica', 'richieste_particolari', 'accessibilità', 'prenotazioni',
+		'sito_web', 'facebook', 'twitter', 'instagram', 'indirizzo', 'mezzi_pubblici', 'parcheggio_privato' ];
 	$output = '<ul>';
 	$address = str_replace( ', Italy', '', $custom_fields['indirizzo']['value']['address'] );
 	foreach ($building_info as $info) {
 		if ( array_key_exists($info, $custom_fields) && !empty($custom_fields[$info]['value']) ) {
 			$value = $custom_fields[$info]['value'];
 			if ( $info != 'indirizzo' && strpos( $value, 'http' ) !== false ) {
+				$value = str_replace( 'http://www.', '', $value );
+				$value = str_replace( 'https://www.', '', $value );
 				$value = '<a href="'.$value.'" target="_blank">'.$value.'</a>';
 			}
 			if ( $info == 'indirizzo' ) {
