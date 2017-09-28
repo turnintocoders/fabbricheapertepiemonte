@@ -20,8 +20,8 @@ get_header(); ?>
 		<article id="post-119" class="twentyseventeen-panel  post-119 page type-page status-publish has-post-thumbnail hentry">
 
 			<div class="panel-image" style="background-image: url(/wp-content/themes/fabbricheaperte/img/Header-1.jpg);">
-				<div class="panel-txt">
-					<p>Due giorni per scoprire le industrie del Piemonte</p>
+				<div class="panel-txt panel-txt-left">
+					<p>Due giorni<br>per scoprire<br>le industrie<br>del Piemonte</p>
 				</div>
 				<div class="panel-txt">
 					<p>#piemontefabbricheaperte</p>
@@ -35,21 +35,37 @@ get_header(); ?>
 		<article id="panel1" class="twentyseventeen-panel  post-123 page type-page status-publish has-post-thumbnail hentry">
 
 				<div class="panel-container">
-					<div class="panel-item">
-						<p> PRONTI PER SCOPRIRE LE INDUSTRIE MANIFATTURIERE DEL PIEMONTE
-							E LE LORO ECCELLENZE?<br/>
-							 <br/>
-							Il 27 e 28 ottobre 2017, FABBRICHE APERTE<br/>
-							<span>vi farà entrare in numerosi stabilimenti, che apriranno le porte per mostrarvi i loro processi di produzione.</span>
-
+					<div class="panel-item panel-item-big-font">
+						<p class="panel-item-title">
+							Pronti per scoprire le industrie manifatturiere del Piemonte e le loro eccellenze?
+							<br>
+							<br>
+						</p>
+						<p>
+							Il 27 e 28 ottobre 2017, Fabbriche Aperte
+							<br>
+							<span class="font-light">vi farà entrare in numerosi stabilimenti, che apriranno le porte per mostrarvi i loro processi di produzione.</span>
 						</p>
 					</div>
 					<div class="panel-item">
 						<p>
-							<strong><span>Dall’automotive al design, dall’agroalimentare al tessile, dall’aerospaziale ai servizi avanzati, dalla meccanica alla chimica, sono tante le eccellenze dell’industria manifatturiera piemontese da conoscere.</span><br/>
-Scoprirete storie di determinazione e innovazione esempi di cultura d’impresa e di saperi tecnologici.</strong><br>
-Un mondo affascinante che permette l'affermazione del sistema economico del  Piemonte a livello internazionale grazie al saper fare e alla qualità  produttiva.
-Una rete di eccellenze che la strategia regionale punta a rafforzare  grazie all'utilizzo mirato dei fondi europei per l'innovazione e la competitività.
+							<strong><span class="font-light">
+								Dall’automotive al design, dall’agroalimentare al tessile, dall’aerospaziale
+								ai servizi avanzati, dalla meccanica alla chimica, sono tante le eccellenze
+								dell’industria manifatturiera piemontese da conoscere.</span>
+								<br>
+								<br>
+								Scoprirete storie di determinazione e innovazione esempi di cultura d’impresa e di saperi
+								tecnologici.
+							</strong>
+							<br>
+							<br>
+							<span class="font-light">
+								Un mondo affascinante che permette l'affermazione del sistema economico del  Piemonte a
+								livello internazionale grazie al saper fare e alla qualità  produttiva.
+								Una rete di eccellenze che la strategia regionale punta a rafforzare  grazie all'utilizzo
+								mirato dei fondi europei per l'innovazione e la competitività.
+							</span>
 						</p>
 					</div>
 				</div><!-- .panel-container -->
@@ -61,16 +77,16 @@ Una rete di eccellenze che la strategia regionale punta a rafforzare  grazie all
 		<article id="panel2" class="twentyseventeen-panel  post-123 page type-page status-publish has-post-thumbnail hentry">
 
 				<div class="panel-container">
-					<div class="panel-item">
-						<h3>PER LE AZIENDE</h3>
-						<p>Come diventare una delle Fabbriche Aperte?</p>
-						<p>Per aderire all’iniziativa
-							Fabbriche Aperte scrivi a <span><a href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></span></p>
+					<div class="panel-item panel-item-purple">
+						<h3>Per le aziende</h3>
+						<p class="panel-item-big-font">Come diventare una delle Fabbriche Aperte?</p>
+						<p class="font-light no-margin-bottom">Per aderire all’iniziativa
+							Fabbriche Aperte scrivi a <b><a href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
 					</div>
 					<div class="panel-item">
-						<h3>PER IL PUBBLICO</h3>
-						<p>Come visitare le Fabbriche Aperte?</p>
-						<p>Le prenotazioni saranno aperte dal 1 ottobre accedendo alle schede delle singole fabbriche</p>
+						<h3>Per il pubblico</h3>
+						<p class="panel-item-big-font">Come visitare le Fabbriche Aperte?</p>
+						<p class="font-light">Le prenotazioni saranno aperte dal 1 ottobre accedendo alle schede delle singole fabbriche</p>
 					</div>
 				</div><!-- .panel-container -->
 

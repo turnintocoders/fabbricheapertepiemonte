@@ -37,6 +37,13 @@ Per maggiori informazioni consulta la documentazione (fai clic sull'icona con il
 @font-face {
 	font-family: Cinetype;
 	src: url('/wp-content/themes/fabbricheaperte/font/GT-Cinetype-Bold.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Cinetype;
+	src: url('/wp-content/themes/fabbricheaperte/font/GT-Cinetype-Light.otf');
+	font-weight: 100;
 }
 
 body,
@@ -133,7 +140,6 @@ a {
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
 	color: #89D3A1;
-	text-decoration: underline;
 	background-color: white;
 }
 
@@ -191,6 +197,10 @@ a {
 	width: 50%;
 }
 
+.font-light {
+	font-weight: 100;
+}
+
 .cf:after,
 .cf:before {
 	clear: both;
@@ -201,7 +211,7 @@ a {
 /* ============= MODIFICHE CLAUDIO ============= */
 
 .navigation-top-date {
-	margin-bottom: .5em;
+	margin-bottom: .8em;
 }
 
 .navigation-top a {
@@ -229,7 +239,8 @@ a {
     background-color: #89D3A1;
 }
 
-.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
     color: #570036;
 }
 
@@ -252,18 +263,32 @@ a {
 	background-position: top center;
 }
 
-.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt {
+.panel-txt {
+	background-color: #570036;
 	position: absolute;
-	top: 1em;
-	left: 2em;
-	color: #89D3A1;
+	top: 0;
+	left: 1.6em;
+	color: white;
 	font-family: Cinetype;
 	font-size: 2em;
-	width: 8em;
+	width: 7em;
 	line-height: 1.2em;
 }
 
-.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt:nth-of-type(2) {
+.panel-txt p {
+	padding: 5px;
+	margin-bottom: 0;
+}
+
+.panel-txt-left {
+	padding-top: 1em;
+}
+
+.panel-txt-left p {
+	padding: 12px;
+}
+
+.panel-txt:nth-of-type(2) {
 	bottom: 1em;
 	right: 2em;
 	top: auto;
@@ -271,16 +296,12 @@ a {
 	font-size: 1.5em;
 	width: 14em;
 	text-align: center;
-}
-
-.site-content-contain .site-content #primary main #post-119 .panel-image .panel-txt p {
-	padding: 5px;
-	background-color: #570036;
+	font-weight: 100;
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container {
 	background-color: #89D3A1;
-	padding: 2em 4em;
+	padding: 2em 51px;
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container:after,
@@ -296,20 +317,35 @@ a {
 	font-family: Cinetype;
 	color: white;
 	line-height: 1.2em;
-	padding: 0 1em;
+	padding: 0;
+}
+
+.panel-item-big-font {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.panel-item-purple {
+	color: #570036;
+}
+
+.panel-item-title {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container .panel-item p {
-	padding: 5px;
+	padding: 12px;
 	background-color: #570036;
 	margin: 0;
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container .panel-item span {
 	color: #89D3A1;
-}
-.site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) {
-	border-left: 2px solid white;
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) p {
@@ -318,7 +354,7 @@ a {
 }
 
 .site-content-contain .site-content #primary main #panel1 .panel-container .panel-item:nth-of-type(2) span {
-	font-size: .8em;
+	font-size: 15px;
 	color: inherit;
 }
 
@@ -330,7 +366,7 @@ a {
 }
 
 .site-content-contain .site-content #primary main #panel2 .panel-container {
-	padding: 0 8em;
+	padding: 0 3.2em;
 	height: 100%;
 }
 
@@ -347,11 +383,15 @@ a {
 	background: white;
 	height: 100%;
 	padding: 2em 1em;
+	margin-bottom: 30px;
 }
 
 .site-content-contain .site-content #primary main #panel2 .panel-container .panel-item h3 {
 	padding: 5px;
 	background-color: #89D3A1;
+	display: inline-block;
+	font-weight: bold;
+	color: #570036;
 }
 
 .site-content-contain .site-content #primary main #panel2 .panel-container .panel-item:nth-of-type(2) {
