@@ -10,5 +10,5 @@
 
 ?>
 <div class="site-info">
-	Made by <a href="http://www.turnintocoders.it">Turn into Coders</a>, with <a href="http://www.wordpress.org">Wordpress</a>
-</div><!-- .site-info -->
+	<a href="mailto:info@piemontefabbricheaperte.it">info@piemontefabbricheaperte.it</a>
+</div>

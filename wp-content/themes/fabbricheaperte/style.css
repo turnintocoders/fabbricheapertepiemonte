@@ -192,9 +192,8 @@ a {
 	width: 100%;
 }
 
-.site-footer .widget-column.footer-widget-1,
-.site-footer .widget-column.footer-widget-2 {
-	width: 50%;
+.site-footer .widget-column.footer-widget-1 {
+	width: 70%;
 }
 
 .font-light {
@@ -206,6 +205,10 @@ a {
 	clear: both;
 	display: block;
 	content: '';
+}
+
+.social-navigation a {
+	background-color: #570036;
 }
 
 /* ============= MODIFICHE CLAUDIO ============= */

@@ -17,6 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="creator" content="Turn into Coders - http://www.turnintocoders.it">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <link rel="icon" type="image/png" sizes="32x32" href="<?= get_stylesheet_directory_uri() ?>/icon/favicon-32x32.png">
