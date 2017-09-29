@@ -80,13 +80,14 @@ get_header(); ?>
 					<div class="panel-item panel-item-purple">
 						<h3>Per le aziende</h3>
 						<p class="panel-item-big-font">Come diventare una delle Fabbriche Aperte?</p>
-						<p class="font-light no-margin-bottom">Per aderire all’iniziativa
+						<p class="font-light">Per aderire all’iniziativa
 							Fabbriche Aperte scrivi a <b><a href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
 					</div>
 					<div class="panel-item">
 						<h3>Per il pubblico</h3>
 						<p class="panel-item-big-font">Come visitare le Fabbriche Aperte?</p>
 						<p class="font-light">Le prenotazioni saranno aperte dal 1 ottobre accedendo alle schede delle singole fabbriche</p>
+						<a href="mailto:info@piemontefabbricheaperte.it">info@piemontefabbricheaperte.it</a>
 					</div>
 				</div><!-- .panel-container -->
 

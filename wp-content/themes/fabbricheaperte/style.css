@@ -4,7 +4,7 @@ Template: twentyseventeen
 Author: Matteo Giaccone & Claudio Gavioli
 Author URI: https://www.turnintocoders.it
 Description: Theme for Fabbriche Aperte Piemonte. Child theme of twentyseventeen.
-Version: 1.1.5
+Version: 1.1.6
 Updated: 2017-09-22 15:20:00
 
 */
@@ -193,7 +193,7 @@ a {
 }
 
 .site-footer .widget-column.footer-widget-1 {
-	width: 70%;
+	width: 80%;
 }
 
 .font-light {

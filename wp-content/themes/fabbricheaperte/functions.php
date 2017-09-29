@@ -113,9 +113,10 @@ function fap_building_info() {
 		if ( array_key_exists($info, $custom_fields) && !empty($custom_fields[$info]['value']) ) {
 			$value = $custom_fields[$info]['value'];
 			if ( $info != 'indirizzo' && strpos( $value, 'http' ) !== false ) {
+				$url = $value;
 				$value = str_replace( 'http://www.', '', $value );
 				$value = str_replace( 'https://www.', '', $value );
-				$value = '<a href="'.$value.'" target="_blank">'.$value.'</a>';
+				$value = '<a href="'.$url.'" target="_blank">'.$value.'</a>';
 			}
 			if ( $info == 'indirizzo' ) {
 				$value = '<a href="https://www.google.it/maps?q='.$address.'" target="_blank">'.$address.'</a>';

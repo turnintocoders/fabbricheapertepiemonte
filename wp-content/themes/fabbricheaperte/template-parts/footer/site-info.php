@@ -9,6 +9,6 @@
  */
 
 ?>
-<div class="site-info">
-	<a href="mailto:info@piemontefabbricheaperte.it">info@piemontefabbricheaperte.it</a>
-</div>
+<!-- <div class="site-info">
+
+</div> -->
