@@ -419,6 +419,7 @@ a {
 	background-size: contain;
 	background-position: top center;
 	overflow: hidden;
+	min-height: 700px;
 }
 
 .post-type-archive-fabbriche .site-content-contain .site-content {
@@ -561,6 +562,13 @@ a {
 	display: none;
 }
 
+.textwidget-list ul li {
+	padding: 0;
+}
+
+.type-fabbriche li {
+	margin-left: 1em;
+}
 
 /* ====== FINE PAGINA FABBRICA ====== */
 
