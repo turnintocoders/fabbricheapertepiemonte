@@ -376,7 +376,7 @@ if(function_exists("register_field_group"))
 					'Cuneo' => 'Cuneo',
 					'Novara' => 'Novara',
 					'Torino' => 'Torino',
-					'Verbania Cusio Ossola' => 'Verbania Cusio Ossola',
+					'Verbania Cusio Ossola' => 'Verbano Cusio Ossola',
 					'Vercelli' => 'Vercelli',
 				),
 				'other_choice' => 0,

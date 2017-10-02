@@ -50,9 +50,9 @@ query_posts( $query );
 						<select id="quartiere" name="provincia">
 							<option value="">Vedi tutti</option>
 							<?php $province = get_field_object('field_59c5168825d53')['choices'];
-							foreach ($province as $provincia) {
+							foreach ($province as $key => $provincia) {
 								$selected = $provincia == $selected_provincia ? ' selected' : '';
-								echo '<option value="'.$provincia.'"'.$selected.'>'.$provincia.'</option>';
+								echo '<option value="'.$key.'"'.$selected.'>'.$provincia.'</option>';
 							} ?>
 						</select>
 					</div><div class="gallery-item">
