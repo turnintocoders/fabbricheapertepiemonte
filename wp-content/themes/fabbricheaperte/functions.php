@@ -115,7 +115,9 @@ function fap_building_info() {
 			if ( $info != 'indirizzo' && strpos( $value, 'http' ) !== false ) {
 				$url = $value;
 				$value = str_replace( 'http://www.', '', $value );
+				$value = str_replace( 'http://', '', $value );
 				$value = str_replace( 'https://www.', '', $value );
+				$value = str_replace( 'https://', '', $value );
 				$value = '<a href="'.$url.'" target="_blank">'.$value.'</a>';
 			}
 			if ( $info == 'indirizzo' ) {
