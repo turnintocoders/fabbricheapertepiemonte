@@ -16,27 +16,23 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
-		<article id="post-119" class="twentyseventeen-panel  post-119 page type-page status-publish has-post-thumbnail hentry">
-
-			<div class="panel-image" style="background-image: url(/wp-content/themes/fabbricheaperte/img/Header-1.jpg);">
-				<div class="panel-txt panel-txt-left">
-					<p>Due giorni<br>per scoprire<br>le industrie<br>del Piemonte</p>
-				</div>
-				<div class="panel-txt">
-					<p>#piemontefabbricheaperte</p>
+		<article class="twentyseventeen-panel">
+			<div class="panel-image clear">
+				<div class="wrap">
+					<div class="panel-txt panel-txt-left">
+						<p>Due giorni<br>per scoprire<br>le industrie<br>del Piemonte</p>
+					</div>
+					<div class="panel-txt panel-txt-right font-light">
+						<p>#piemontefabbricheaperte</p>
+					</div>
 				</div>
 			</div><!-- .panel-image -->
-
-
 		</article><!-- #post-## -->
 
-
-		<article id="panel1" class="twentyseventeen-panel  post-123 page type-page status-publish has-post-thumbnail hentry">
-
-				<div class="panel-container">
-					<div class="panel-item panel-item-big-font">
-						<p class="panel-item-title">
+		<article id="panel1" class="twentyseventeen-panel">
+				<div class="wrap">
+					<div class="panel1-item panel1-item-left">
+						<p class="panel1-item-title">
 							Pronti per scoprire le industrie manifatturiere del Piemonte e le loro eccellenze?
 							<br>
 							<br>
@@ -44,10 +40,10 @@ get_header(); ?>
 						<p>
 							Il 27 e 28 ottobre 2017, Fabbriche Aperte
 							<br>
-							<span class="font-light">vi farà entrare in numerosi stabilimenti, che apriranno le porte per mostrarvi i loro processi di produzione.</span>
+							<span class="font-light green">vi farà entrare in numerosi stabilimenti, che apriranno le porte per mostrarvi i loro processi di produzione.</span>
 						</p>
 					</div>
-					<div class="panel-item">
+					<div class="panel1-item panel1-item-right purple">
 						<p>
 							<strong><span class="font-light">
 								Dall’automotive al design, dall’agroalimentare al tessile, dall’aerospaziale
@@ -69,28 +65,23 @@ get_header(); ?>
 						</p>
 					</div>
 				</div><!-- .panel-container -->
-
 		</article><!-- #post-## -->
 
-
-
-		<article id="panel2" class="twentyseventeen-panel  post-123 page type-page status-publish has-post-thumbnail hentry">
-
-				<div class="panel-container">
-					<div class="panel-item panel-item-purple">
+		<article id="panel2" class="twentyseventeen-panel">
+				<div class="wrap">
+					<div class="panel2-item panel2-item-left purple">
 						<h3>Per le aziende</h3>
-						<p class="panel-item-big-font">Come diventare una delle Fabbriche Aperte?</p>
+						<p class="panel2-item-big-font">Come diventare una delle Fabbriche Aperte?</p>
 						<p class="font-light">Per aderire all’iniziativa
-							Fabbriche Aperte scrivi a <b><a href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
+							Fabbriche Aperte scrivi a <b><a class="green" href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
 					</div>
-					<div class="panel-item">
+					<div class="panel2-item panel2-item-right">
 						<h3>Per il pubblico</h3>
-						<p class="panel-item-big-font">Come visitare le Fabbriche Aperte?</p>
+						<p class="panel2-item-big-font">Come visitare le Fabbriche Aperte?</p>
 						<p class="font-light">Le prenotazioni saranno aperte dal 1 ottobre accedendo alle schede delle singole fabbriche</p>
-						<a href="mailto:info@piemontefabbricheaperte.it">info@piemontefabbricheaperte.it</a>
+						<a class="green" href="mailto:info@piemontefabbricheaperte.it">info@piemontefabbricheaperte.it</a>
 					</div>
 				</div><!-- .panel-container -->
-
 		</article><!-- #post-## -->
 
 		<?php
