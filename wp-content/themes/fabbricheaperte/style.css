@@ -45,6 +45,10 @@ textarea {
 	padding: 1.5em 0;
 }
 
+.site-branding a:hover {
+	opacity: 1;
+}
+
 .custom-logo-link {
 	float: left;
 }
@@ -236,6 +240,38 @@ a {
 }
 /* === END FRONT PAGE === */
 
+
+/* === FABBRICHE === */
+.fabbriche-background {
+	background: url(/wp-content/themes/fabbricheaperte/img/BG-pagina1.png) repeat-y;
+	background-size: cover;
+	background-position: top center;
+	overflow: hidden;
+}
+
+.item-fabbrica .page-item {
+	background: #570036 url(/wp-content/themes/fabbricheaperte/img/BG-fabb-item.png) no-repeat;
+	background-size: cover;
+	height: 272px;
+	margin-bottom: 5%;
+	padding: 2em;
+	color: white;
+}
+
+.item-fabbrica a:hover .page-item {
+	background: #89D3A1;
+	color: #570036;
+}
+
+.item-fabbrica a .page-item p {
+	font-size: 2em;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+/* === END FABBRICHE === */
+
+
 /* === FOOTER === */
 .site-footer {
 	background-color: white;
@@ -268,6 +304,10 @@ a {
 
 .no-margin-bottom {
 	margin-bottom: 0;
+}
+
+.margin-bottom {
+	margin-bottom: 2em;
 }
 
 /* === END UTILS === */
@@ -303,12 +343,32 @@ a {
 		float: left;
 		width: 50%;
 	}
+
+	.item-fabbrica .page-item {
+		float: left;
+		width: 45%;
+		margin-right: 5%;
+	}
+
+	.item-fabbrica a:nth-of-type(2n) .page-item {
+		margin-right: 0;
+	}
 }
 
 @media screen and (min-width: 48em) {
 	.panel-txt-right {
 		font-size: 1.5em;
 		width: 14em;
+	}
+
+	.item-fabbrica .page-item,
+	.item-fabbrica a:nth-of-type(2n) .page-item {
+		width: 30%;
+		margin-right: 5%;
+	}
+
+	.item-fabbrica a:nth-of-type(3n) .page-item {
+		margin-right: 0;
 	}
 }
 
