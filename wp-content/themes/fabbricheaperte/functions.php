@@ -130,7 +130,7 @@ function fap_building_info() {
 	$lat = $custom_fields['indirizzo']['value']['lat'];
 	$lng = $custom_fields['indirizzo']['value']['lng'];
 	$output .= '<a href="https://www.google.it/maps?q='.$address.'" target="_blank">'.
-	'<img src="https://maps.googleapis.com/maps/api/staticmap?center='.$lat.','.$lng.
+	'<img class="fabbrica-sidebar-map" src="https://maps.googleapis.com/maps/api/staticmap?center='.$lat.','.$lng.
 	'&zoom=15&size=300x300&maptype=roadmap&markers=color:red%7C'.$lat.','.$lng.
 	'&key=AIzaSyChbI5EcduTRA7PcNjZzE_BWOP5b3ikwVo" /></a>';
 	return $output;

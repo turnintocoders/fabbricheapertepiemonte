@@ -39,7 +39,7 @@
 		<span>↓</span>
 	</header><!-- .entry-header -->
 
-	<div class="category-row">
+	<div class="category-row clear">
 		<?php $provincia = get_field_object('field_59c5168825d53')['value'];
 		if ( $provincia ) { ?>
 			<a href="/fabbriche?provincia=<?= $provincia ?>">

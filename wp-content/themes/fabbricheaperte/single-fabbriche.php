@@ -39,7 +39,7 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
-		<aside id="secondary" class="widget-area fabbr-aside-padding-top" role="complementary">
+		<aside id="secondary" class="widget-area fabbrica-sidebar" role="complementary">
 			<section class="widget widget_text widget-text-size">
 				<h2 class="widget-title widget-title-bg">Informazioni</h2>
 				<div class="textwidget textwidget-list">

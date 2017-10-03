@@ -57,6 +57,10 @@ textarea {
 	max-width: 270px;
 	max-height: 110px;
 }
+
+.site-content {
+	padding-top: 2.5em;
+}
 /* === END HEADER === */
 
 /* === NAVIGATION ===*/
@@ -271,6 +275,107 @@ a {
 
 /* === END FABBRICHE === */
 
+/* === FABBRICA === */
+/* sfondo colorato titolo*/
+.single-fabbriche .entry-header.header-bg {
+	background-color: #570036;
+	color: white;
+	padding: 1em;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	width: 49%;
+	margin-left: 0;
+}
+
+/* riga categorie*/
+.single-fabbriche .category-row {
+	margin: 1em 0;
+}
+
+/* categorie fabbrica*/
+.single-fabbriche .category-item {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	height: auto;
+	background-color: #89D3A1;
+	color: white;
+	line-height: 2em;
+	padding-left: .5em;
+}
+
+.single-fabbriche a:nth-of-type(2) .category-item {
+	margin-right: 0;
+}
+
+.single-fabbriche .content-description {
+	color: #570036;
+	margin-top: 2em;
+}
+
+.type-fabbriche li {
+	margin-left: 1em;
+}
+
+.fabbrica-sidebar {
+	color: #570036;
+}
+
+/* sfondo titolo aside */
+.fabbrica-sidebar .widget-title-bg {
+	background-color: #570036;
+	color: white;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.fabbrica-sidebar .widget-text-size {
+	font-size: 14px;
+}
+
+.fabbrica-sidebar .textwidget-list ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.fabbrica-sidebar .textwidget-list ul li {
+	padding: 0;
+}
+
+.fabbrica-sidebar-map {
+	width: 100%;
+}
+
+.ngg-imagebrowser {
+	margin-bottom: 2em;
+}
+
+.ngg-imagebrowser h3 {
+	display: none;
+}
+
+.ngg-imagebrowser .counter {
+	display: none;
+}
+
+.ngg-imagebrowser .pic a {
+	margin: 0 !important;
+}
+
+.ngg-imagebrowser-nav {
+	padding: 0 !important;
+}
+
+.ngg-imagebrowser-nav .next,
+.ngg-imagebrowser-nav .back {
+	border: 0 !important;
+	padding: 0 !important;
+}
+
+.entry-content .ngg-imagebrowser-nav a {
+	box-shadow: 0 0;
+}
+/* === END FABBRICA === */
 
 /* === FOOTER === */
 .site-footer {
