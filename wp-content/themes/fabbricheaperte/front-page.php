@@ -108,4 +108,50 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
+<?php
+$query = [
+	'post_type' => 'fabbriche',
+];
+query_posts( $query );
+$js = '';
+$id = 0;
+while ( have_posts() ) : the_post();
+	$custom_fields = get_field_objects();
+	if ($custom_fields['indirizzo']['value']) {
+		$lat = $custom_fields['indirizzo']['value']['lat'];
+		$lng = $custom_fields['indirizzo']['value']['lng'];
+		$js .= 'var marker'.$id.' = new google.maps.Marker({
+			position: {lat: '.$lat.', lng: '.$lng.'},
+			map: map
+		});';
+		$js .= 'marker'.$id.'.addListener(\'click\', function() {
+			infoWindow.setContent("<a href=\''.get_permalink().'\'>'.get_the_title().'</a>");
+			infoWindow.open(map, marker'.$id.');
+			});';
+		$id++;
+	}
+endwhile;
+?>
+
+<style>
+#map {
+	height: 500px;
+	width: 100%;
+}
+</style>
+<div id="map"></div>
+<script>
+function initMap() {
+	var infoWindow = new google.maps.InfoWindow;
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 8,
+		center: {lat:45.295, lng:8.038}
+	});
+	<?= $js ?>
+}
+</script>
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNjXHb9FNrUR_WOC0gHprUEEbHvd_aKIY&callback=initMap">
+</script>
 <?php get_footer();
