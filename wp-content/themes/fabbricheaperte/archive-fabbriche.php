@@ -74,7 +74,7 @@ query_posts( $query );
 
 	<?php
 	if ( array_key_exists( 'provincia', $_GET ) && !empty( $_GET['provincia'] ) ) {
-		echo '<b>Provincia: </b>'.$selected_provincia.' ';
+		echo '<b>Provincia: </b>'.get_field_object('field_59c5168825d53')['choices'][$selected_provincia].' ';
 	}
 	if ( array_key_exists( 'category', $_GET ) && !empty( $_GET['category'] ) ) {
 		echo '<b>Categoria: </b>'.get_field_object('field_59c517c86992c')['choices'][$selected_category].' ';

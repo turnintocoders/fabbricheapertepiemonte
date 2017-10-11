@@ -41,9 +41,10 @@
 
 	<div class="category-row clear">
 		<?php $provincia = get_field_object('field_59c5168825d53')['value'];
+		$province = get_field_object('field_59c5168825d53')['choices'];
 		if ( $provincia ) { ?>
 			<a href="/fabbriche?provincia=<?= $provincia ?>">
-				<div class="category-item"><?= $provincia ?></div>
+				<div class="category-item"><?= $province[$provincia] ?></div>
 			</a>
 		<?php }
 		$categorie = get_field_object('field_59c517c86992c')['value'];
