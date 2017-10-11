@@ -17,7 +17,9 @@ $query = [
 	'post_type' => 'fabbriche',
 	'meta_query' => [
 		'relation' => 'AND',
-	]
+	],
+	'orderby' => 'title',
+	'order'   => 'ASC',
 ];
 if ( array_key_exists( 'provincia', $_GET ) && !empty( $_GET['provincia'] ) ) {
 	$selected_provincia = $_GET['provincia'];
