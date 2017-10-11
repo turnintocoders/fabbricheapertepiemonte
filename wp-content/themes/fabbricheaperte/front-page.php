@@ -71,9 +71,8 @@ get_header(); ?>
 				<div class="wrap">
 					<div class="panel2-item panel2-item-left purple">
 						<h3>Per le aziende</h3>
-						<p class="panel2-item-big-font">Come diventare una delle Fabbriche Aperte?</p>
-						<p class="font-light">Per aderire all’iniziativa
-							Fabbriche Aperte scrivi a <b><a class="green" href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
+						<p class="font-light">La raccolta delle adesioni per l'edizione 2017 è conclusa.</p>
+						<p class="font-light">Per informazioni su Fabbriche Aperte scrivi a <b><a class="green" href="mailto:gabinettopresidenzagiunta@regione.piemonte.it">gabinettopresidenzagiunta@regione.piemonte.it</a></b></p>
 					</div>
 					<div class="panel2-item panel2-item-right">
 						<h3>Per il pubblico</h3>
