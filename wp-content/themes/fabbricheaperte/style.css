@@ -285,6 +285,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	font-size: 2em;
 	line-height: 1.2em;
 	margin: 0;
+	text-shadow: 0 0 5px black;
 }
 
 /* === END FABBRICHE === */
