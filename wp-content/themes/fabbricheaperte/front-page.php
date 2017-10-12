@@ -122,7 +122,8 @@ while ( have_posts() ) : the_post();
 		$lng = $custom_fields['indirizzo']['value']['lng'];
 		$js .= 'var marker'.$id.' = new google.maps.Marker({
 			position: {lat: '.$lat.', lng: '.$lng.'},
-			map: map
+			map: map,
+			icon: pinImage
 		});';
 		$js .= 'marker'.$id.'.addListener(\'click\', function() {
 			infoWindow.setContent("<a href=\''.get_permalink().'\'>'.get_the_title().'</a>");
@@ -143,6 +144,11 @@ endwhile;
 <script>
 function initMap() {
 	var infoWindow = new google.maps.InfoWindow;
+	var pinColor = '570036';
+	var pinImage = new google.maps.MarkerImage('http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|' + pinColor,
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0,0),
+		new google.maps.Point(10, 34));
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 8,
 		center: {lat:45.295, lng:8.038}
