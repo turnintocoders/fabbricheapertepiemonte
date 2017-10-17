@@ -88,27 +88,26 @@ query_posts( $query );
 	?>
 </div>
 
-<div class="fabbriche-background">
-	<div class="wrap">
-		<main id="main" class="site-main" role="main">
-			<div class="item-fabbrica">
-			<?php
-			/* Start the Loop */
-			if ( have_posts() ) :
-				while ( have_posts() ) : the_post();
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/fabbriche-thumb' );
-				endwhile;
-			else :
-				get_template_part( 'template-parts/post/content', 'none' );
-			endif; ?>
-			</div>
-		</main><!-- #main -->
-	</div><!-- .wrap -->
-</div>
+
+<div class="wrap">
+	<main id="main" class="site-main" role="main">
+		<div class="item-fabbrica">
+		<?php
+		/* Start the Loop */
+		if ( have_posts() ) :
+			while ( have_posts() ) : the_post();
+				/*
+				 * Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/fabbriche-thumb' );
+			endwhile;
+		else :
+			get_template_part( 'template-parts/post/content', 'none' );
+		endif; ?>
+		</div>
+	</main><!-- #main -->
+</div><!-- .wrap -->
 
 <?php get_footer();

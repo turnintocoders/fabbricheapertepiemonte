@@ -263,12 +263,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 
 /* === FABBRICHE === */
-.fabbriche-background {
-	background: url(/wp-content/themes/fabbricheaperte/img/BG-pagina1.png) repeat-y;
-	background-size: contain;
-	background-position: top center;
-	overflow: hidden;
-}
 
 .item-fabbrica .page-item {
 	background: #570036 url(/wp-content/themes/fabbricheaperte/img/BG-fabb-item.png) no-repeat;
