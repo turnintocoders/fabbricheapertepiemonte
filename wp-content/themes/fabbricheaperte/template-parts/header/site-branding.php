@@ -36,7 +36,7 @@
 
 	<?php if ( has_nav_menu( 'top' ) ) : ?>
 		<div class="navigation-top">
-			<div class="navigation-top-date">27 — 28 ottobre</div>
+			<div class="navigation-top-date">&nbsp;</div>
 			<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 		</div><!-- .navigation-top -->
 	<?php endif; ?>
